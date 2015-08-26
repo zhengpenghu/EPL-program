@@ -1,0 +1,35 @@
+GTEST_DIR = ../../../gtest
+GTEST_INC = $(GTEST_DIR)/include
+
+#choose based on system
+GTEST_LIB = $(GTEST_DIR)/lib/gtest_yosemite.a
+#GTEST_LIB = $(GTEST_DIR)/lib/gtest_gtest_yosemite.a
+
+CXX = g++
+CXXFLAGS = -g -I $(GTEST_INC) -std=c++11  -Wno-sign-compare -Wall -Werror -fmax-errors=1
+
+SRCS = $(shell ls *.cpp)
+OBJS = $(patsubst %.cpp, %.o, $(SRCS))
+DEPS = $(patsubst %.cpp, %.d, $(SRCS))
+TEST = vector_unittest
+
+all: $(TEST)
+
+test: $(TEST)
+	@./$(TEST)
+
+$(TEST): $(OBJS)
+	$(CXX) $^ $(EXTRA_TESTS) $(GTEST_LIB) $(CXXFLAGS) -pthread -o $@
+
+#<Automatic Dependency Generation>
+-include $(DEPS)
+
+%.d: %.cpp
+	@$(CXX) $< $(CXXFLAGS) -MM > $@
+
+%.o: %.d
+	$(CXX) $*.cpp $(CXXFLAGS) -c -o $@
+#<\Automatic Dependency Generation>
+
+clean:
+	-rm -rf *.o *d $(TEST) 

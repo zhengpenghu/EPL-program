@@ -1,0 +1,12 @@
+14:41:11 **** Incremental Build of configuration Default for project epl ****
+make all 
+g++ --std=c++11 -I/opt/local   -Wall  -g  -DDEBUG=0 -DNO_WINDOW=0 -DSPECIES_SUMMARY=1 -DALGAE_SPORES=1 -DRANDOM=0 -DSLOWDOWN=0 -DUSE_GC=0  -c -o Algae.o Algae.cpp
+In file included from Algae.cpp:10:
+./Window.h:8:10: fatal error: 'Fl.H' file not found
+#include <Fl.H>
+         ^
+1 error generated.
+make: *** [Algae.o] Error 1
+
+14:41:11 Build Finished (took 446ms)
+

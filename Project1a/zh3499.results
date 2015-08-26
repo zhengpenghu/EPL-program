@@ -1,0 +1,274 @@
+Number of A tests passed: 6 out of 6
+Number of A* tests passed: 6 out of 6
+Number of A** tests passed: 2 out of 4
+
+=====Summary=====
+[       OK ] PhaseA.push_back (0 ms)
+[       OK ] PhaseA.bracket_operator (0 ms)
+[       OK ] PhaseA.pop_back (0 ms)
+[       OK ] PhaseA.constructors (0 ms)
+[       OK ] PhaseA.range_checks (0 ms)
+[       OK ] PhaseA1.PushBackFront (0 ms)
+[       OK ] PhaseA1.CopyConstruct (0 ms)
+[       OK ] PhaseA2.FooCtorDtor (0 ms)
+[  FAILED  ] PHASE_A2_1 exited with errors
+[       OK ] PhaseASecret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[       OK ] PhaseA2Secret.<censored>
+[  FAILED  ] PhaseA2Secret.<censored>
+
+===== Dump  ======
+
+Testing: PHASE_A_0
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_A_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_A_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_A_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.push_back
+[       OK ] PhaseA.push_back (0 ms)
+[----------] 1 test from PhaseA (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A_1
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_A_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_A_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_A_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.bracket_operator
+[       OK ] PhaseA.bracket_operator (0 ms)
+[----------] 1 test from PhaseA (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A_2
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_A_2 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_A_2 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_A_2 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.pop_back
+[       OK ] PhaseA.pop_back (0 ms)
+[----------] 1 test from PhaseA (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A_3
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_A_3 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_A_3 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_A_3 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.constructors
+[       OK ] PhaseA.constructors (0 ms)
+[----------] 1 test from PhaseA (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A_4
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_A_4 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_A_4 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_A_4 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.range_checks
+[       OK ] PhaseA.range_checks (0 ms)
+[----------] 1 test from PhaseA (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A1_0
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_A1_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_A1_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_A1_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1
+[ RUN      ] PhaseA1.PushBackFront
+[       OK ] PhaseA1.PushBackFront (0 ms)
+[----------] 1 test from PhaseA1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A1_1
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_A1_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_A1_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_A1_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1
+[ RUN      ] PhaseA1.CopyConstruct
+[       OK ] PhaseA1.CopyConstruct (0 ms)
+[----------] 1 test from PhaseA1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A2_0
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_A2_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_A2_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_A2_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA2
+[ RUN      ] PhaseA2.FooCtorDtor
+[       OK ] PhaseA2.FooCtorDtor (0 ms)
+[----------] 1 test from PhaseA2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A2_1
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_A2_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_A2_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_A2_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA2
+[ RUN      ] PhaseA2.ReallocCopy
+Makefile:20: recipe for target 'test' failed
+make: *** [test] Aborted (core dumped)
+
+Testing: PHASE_AS_0
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_AS_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_AS_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_AS_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseASecret.<censored>
+[ RUN      ] PhaseASecret.<censored>
+[       OK ] PhaseASecret.<censored>
+[----------] 1 test from PhaseASecret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS1_0
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_AS1_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_AS1_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_AS1_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1Secret.<censored>
+[ RUN      ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[----------] 1 test from PhaseA1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS1_1
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_AS1_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_AS1_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_AS1_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1Secret.<censored>
+[ RUN      ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[----------] 1 test from PhaseA1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS1_2
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_AS1_2 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_AS1_2 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_AS1_2 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1Secret.<censored>
+[ RUN      ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[----------] 1 test from PhaseA1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS1_3
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_AS1_3 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+In file included from Vector_PhaseA_secrettests.cpp:8:0:
+Vector.h: In member function ‘const T& epl::vector<T>::operator[](uint64_t) const [with T = int; uint64_t = long unsigned int]’:
+Vector.h:124:3: warning: control reaches end of non-void function [-Wreturn-type]
+   }
+   ^
+g++ Vector_PhaseA_unittests.cpp -DPHASE_AS1_3 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_AS1_3 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1Secret.<censored>
+[ RUN      ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[----------] 1 test from PhaseA1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS2_0
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_AS2_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_AS2_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_AS2_0 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA2Secret.<censored>
+[ RUN      ] PhaseA2Secret.<censored>
+[       OK ] PhaseA2Secret.<censored>
+[----------] 1 test from PhaseA2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS2_1
+g++ Vector_PhaseA_secrettests.cpp -DPHASE_AS2_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_secrettests.o
+g++ Vector_PhaseA_unittests.cpp -DPHASE_AS2_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -c -o Vector_PhaseA_unittests.o
+g++ Vector_PhaseA_secrettests.o Vector_PhaseA_unittests.o  ../../../gtest/lib/gtest64.a -DPHASE_AS2_1 -g -I ../../../gtest/include -std=c++11 -Wall -Wno-sign-compare  -pthread -o vector_unittest
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA2Secret.<censored>
+[ RUN      ] PhaseA2Secret.<censored>
+Vector_PhaseA_secrettests.cpp:225: Failure
+Value of: 10
+Expected: x.size()
+Which is: 32
+[  FAILED  ] PhaseA2Secret.<censored>
+[----------] 1 test from PhaseA2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] PhaseA2Secret.<censored>
+
+ 1 FAILED TEST
+Makefile:20: recipe for target 'test' failed
+make: *** [test] Error 1

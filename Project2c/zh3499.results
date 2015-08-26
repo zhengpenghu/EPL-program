@@ -1,0 +1,149 @@
+====== Summary ======
+[       OK ] PhaseC.BasicOperation (1 ms)
+[       OK ] PhaseC.Iterator (0 ms)
+[       OK ] PhaseC.ApplyAccumulate (0 ms)
+[       OK ] PhaseC.Lazy (0 ms)
+[       OK ] PhaseC.ValarrayToScalarOp (0 ms)
+[       OK ] PhaseCS.SFINAE_E2E (0 ms)
+[       OK ] PhaseCS.SFINAE_C2C (0 ms)
+[       OK ] PhaseCS.SFINAE_V2C (0 ms)
+[       OK ] PhaseCS.SFINAE_V2E (0 ms)
+[       OK ] PhaseCS.SFINAE_V2I (0 ms)
+
+======= Dump========
+g++ Valarray_PhaseC_unittests.cpp -DPHASE_C_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_C_0.tst
+g++ Valarray_PhaseC_unittests.cpp -DPHASE_C_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_C_1.tst
+g++ Valarray_PhaseC_unittests.cpp -DPHASE_C_2 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_C_2.tst
+g++ Valarray_PhaseC_unittests.cpp -DPHASE_C_3 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_C_3.tst
+g++ Valarray_PhaseC_unittests.cpp -DPHASE_CS2_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS2_0.tst
+g++ Valarray_PhaseC_unittests.cpp -DPHASE_CS2_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS2_1.tst
+g++ Valarray_PhaseC_unittests.cpp -DPHASE_CS2_3 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS2_3.tst
+g++ Valarray_PhaseC_unittests.cpp -DPHASE_CS2_4 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS2_4.tst
+g++ Valarray_PhaseC_unittests.cpp -DPHASE_CS2_5 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_CS2_5.tst
+make: 'PHASE_C_3.tst' is up to date.
+
+Testing: PHASE_C_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC
+[ RUN      ] PhaseC.BasicOperation
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+
+[       OK ] PhaseC.BasicOperation (1 ms)
+[----------] 1 test from PhaseC (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (2 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_C_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC
+[ RUN      ] PhaseC.Iterator
+[       OK ] PhaseC.Iterator (0 ms)
+[----------] 1 test from PhaseC (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_C_2.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseC
+[ RUN      ] PhaseC.ApplyAccumulate
+[       OK ] PhaseC.ApplyAccumulate (0 ms)
+[----------] 1 test from PhaseC (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_C_3.tst
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from PhaseC
+[ RUN      ] PhaseC.Lazy
+[       OK ] PhaseC.Lazy (0 ms)
+[ RUN      ] PhaseC.ValarrayToScalarOp
+[       OK ] PhaseC.ValarrayToScalarOp (0 ms)
+[----------] 2 tests from PhaseC (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.
+
+Testing: PHASE_CS2_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseCS
+[ RUN      ] PhaseCS.SFINAE_E2E
+[       OK ] PhaseCS.SFINAE_E2E (0 ms)
+[----------] 1 test from PhaseCS (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_CS2_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseCS
+[ RUN      ] PhaseCS.SFINAE_C2C
+[       OK ] PhaseCS.SFINAE_C2C (0 ms)
+[----------] 1 test from PhaseCS (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_CS2_3.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseCS
+[ RUN      ] PhaseCS.SFINAE_V2C
+[       OK ] PhaseCS.SFINAE_V2C (0 ms)
+[----------] 1 test from PhaseCS (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_CS2_4.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseCS
+[ RUN      ] PhaseCS.SFINAE_V2E
+[       OK ] PhaseCS.SFINAE_V2E (0 ms)
+[----------] 1 test from PhaseCS (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_CS2_5.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseCS
+[ RUN      ] PhaseCS.SFINAE_V2I
+[       OK ] PhaseCS.SFINAE_V2I (0 ms)
+[----------] 1 test from PhaseCS (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.

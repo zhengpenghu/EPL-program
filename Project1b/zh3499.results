@@ -1,0 +1,351 @@
+====== Summary ======
+[       OK ] PhaseA.push_back (0 ms)
+[       OK ] PhaseA.bracket_operator (0 ms)
+[       OK ] PhaseA.pop_back (0 ms)
+[       OK ] PhaseA.constructors (0 ms)
+[       OK ] PhaseA.range_checks (0 ms)
+[       OK ] PhaseA1.PushBackFront (0 ms)
+[       OK ] PhaseA1.CopyConstruct (0 ms)
+[       OK ] PhaseA2.FooCtorDtor (0 ms)
+[       OK ] PhaseA2.ReallocCopy (0 ms)
+[       OK ] PhaseASecret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[       OK ] PhaseA2Secret.<censored>
+[       OK ] PhaseA2Secret.<censored>
+[       OK ] PhaseB.MoveCtor (0 ms)
+[       OK ] PhaseB1.PushBackMove (0 ms)
+[       OK ] PhaseB1.ReallocCopy (0 ms)
+[       OK ] PhaseB0Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[  FAILED  ] PhaseB1Secret.<censored>
+[       OK ] PhaseB2Secret.<censored>
+[       OK ] PhaseB2Secret.<censored>
+
+======= Dump========
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A0_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A0_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A0_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A0_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A0_2 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A0_2.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A0_3 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A0_3.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A0_4 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A0_4.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A1_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A1_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A1_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A1_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A2_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A2_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_A2_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A2_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_B0_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_B0_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_B1_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_B1_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_B2_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_B2_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_AS0_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS0_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_AS1_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS1_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_AS1_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS1_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_AS1_2 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS1_2.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_AS1_3 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS1_3.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_AS2_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS2_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_AS2_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS2_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_BS0_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS0_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_BS1_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS1_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_BS1_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS1_1.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_BS2_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS2_0.tst
+g++ Vector_PhaseA_unittests.cpp Vector_PhaseB_unittests.cpp Vector_secret_unittests.cpp -DPHASE_BS2_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS2_1.tst
+
+Testing: PHASE_A0_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.push_back
+[       OK ] PhaseA.push_back (0 ms)
+[----------] 1 test from PhaseA (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (2 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A0_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.bracket_operator
+[       OK ] PhaseA.bracket_operator (0 ms)
+[----------] 1 test from PhaseA (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A0_2.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.pop_back
+[       OK ] PhaseA.pop_back (0 ms)
+[----------] 1 test from PhaseA (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A0_3.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.constructors
+[       OK ] PhaseA.constructors (0 ms)
+[----------] 1 test from PhaseA (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A0_4.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.range_checks
+[       OK ] PhaseA.range_checks (0 ms)
+[----------] 1 test from PhaseA (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A1_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1
+[ RUN      ] PhaseA1.PushBackFront
+[       OK ] PhaseA1.PushBackFront (0 ms)
+[----------] 1 test from PhaseA1 (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A1_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1
+[ RUN      ] PhaseA1.CopyConstruct
+[       OK ] PhaseA1.CopyConstruct (0 ms)
+[----------] 1 test from PhaseA1 (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A2_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA2
+[ RUN      ] PhaseA2.FooCtorDtor
+[       OK ] PhaseA2.FooCtorDtor (0 ms)
+[----------] 1 test from PhaseA2 (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A2_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA2
+[ RUN      ] PhaseA2.ReallocCopy
+[       OK ] PhaseA2.ReallocCopy (0 ms)
+[----------] 1 test from PhaseA2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (2 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS0_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseASecret.<censored>
+[ RUN      ] PhaseASecret.<censored>
+[       OK ] PhaseASecret.<censored>
+[----------] 1 test from PhaseASecret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS1_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1Secret.<censored>
+[ RUN      ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[----------] 1 test from PhaseA1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS1_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1Secret.<censored>
+[ RUN      ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[----------] 1 test from PhaseA1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (16 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS1_2.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1Secret.<censored>
+[ RUN      ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[----------] 1 test from PhaseA1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS1_3.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1Secret.<censored>
+[ RUN      ] PhaseA1Secret.<censored>
+[       OK ] PhaseA1Secret.<censored>
+[----------] 1 test from PhaseA1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS2_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA2Secret.<censored>
+[ RUN      ] PhaseA2Secret.<censored>
+[       OK ] PhaseA2Secret.<censored>
+[----------] 1 test from PhaseA2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS2_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA2Secret.<censored>
+[ RUN      ] PhaseA2Secret.<censored>
+[       OK ] PhaseA2Secret.<censored>
+[----------] 1 test from PhaseA2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_B0_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB
+[ RUN      ] PhaseB.MoveCtor
+[       OK ] PhaseB.MoveCtor (0 ms)
+[----------] 1 test from PhaseB (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_B1_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1
+[ RUN      ] PhaseB1.PushBackMove
+[       OK ] PhaseB1.PushBackMove (0 ms)
+[----------] 1 test from PhaseB1 (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_B2_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1
+[ RUN      ] PhaseB1.ReallocCopy
+[       OK ] PhaseB1.ReallocCopy (0 ms)
+[----------] 1 test from PhaseB1 (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS0_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB0Secret.<censored>
+[ RUN      ] PhaseB0Secret.<censored>
+[       OK ] PhaseB0Secret.<censored>
+[----------] 1 test from PhaseB0Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS1_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1Secret.<censored>
+[ RUN      ] PhaseB1Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[----------] 1 test from PhaseB1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS1_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1Secret.<censored>
+[ RUN      ] PhaseB1Secret.<censored>
+Vector_secret_unittests.cpp:268: Failure
+Value of: Foo::copies
+  Actual: 10
+Expected: 0
+Vector_secret_unittests.cpp:269: Failure
+Value of: Foo::destructions
+  Actual: 10
+Expected: 0
+[  FAILED  ] PhaseB1Secret.<censored>
+[----------] 1 test from PhaseB1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] PhaseB1Secret.<censored>
+
+ 1 FAILED TEST
+
+Testing: PHASE_BS2_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB2Secret.<censored>
+[ RUN      ] PhaseB2Secret.<censored>
+[       OK ] PhaseB2Secret.<censored>
+[----------] 1 test from PhaseB2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS2_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB2Secret.<censored>
+[ RUN      ] PhaseB2Secret.<censored>
+[       OK ] PhaseB2Secret.<censored>
+[----------] 1 test from PhaseB2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.

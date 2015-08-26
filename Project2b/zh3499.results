@@ -1,0 +1,379 @@
+====== Summary ======
+make: *** [PHASE_AS0_3.tst] Error 1
+make: *** [PHASE_BS1_2.tst] Error 1
+make: *** [PHASE_BS1_3.tst] Error 1
+make: *** [PHASE_BS1_5.tst] Error 1
+make: *** [PHASE_BS1_8.tst] Error 1
+make: *** [PHASE_BS1_9.tst] Error 1
+[       OK ] PhaseA.Operators (0 ms)
+[       OK ] PhaseA.BracketOp (0 ms)
+[       OK ] PhaseA1.Complex (0 ms)
+[       OK ] PhaseASecret.<censored>
+[       OK ] PhaseASecret.<censored>
+[       OK ] PhaseASecret.<censored>
+[       OK ] PhaseASecret.<censored>
+[       OK ] PhaseASecret.<censored>
+[       OK ] PhaseASecret.<censored>
+[       OK ] PhaseB1.Sqrt (0 ms)
+[       OK ] PhaseB1.Apply (0 ms)
+[       OK ] PhaseB1.Accumulate (0 ms)
+[       OK ] PhaseB1.Lazy (0 ms)
+[       OK ] PhaseB1Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[       OK ] PhaseB2Secret.<censored>
+
+======= Dump========
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_A0_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A0_1.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_A0_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A0_0.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_A1_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_A1_0.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_B1_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_B1_0.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_B1_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_B1_1.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_B1_2 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_B1_2.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_B1_3 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_B1_3.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_AS0_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS0_0.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_AS0_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS0_1.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_AS0_2 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS0_2.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_AS0_3 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS0_3.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_AS0_4 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS0_4.tst
+In file included from Valarray_secret_unittests.cpp:14:0:
+Valarray.h: In instantiation of ‘vec_wrap<proxy<T, scalar<F>, std::minus<typename choose_type<typename T::value_type, typename scalar<F>::value_type>::type> > > operator-(const vec_wrap<T>&, const F&) [with T = epl::vector<int>; F = int; unused = int; typename choose_type<typename T::value_type, typename scalar<F>::value_type>::type = int]’:
+Valarray_secret_unittests.cpp:95:13:   required from here
+Valarray.h:417:142: error: ‘int’ is not a class, struct, or union type
+     return vec_wrap<proxy<T,scalar<F>, std::minus<typename choose_type<typename T::value_type,typename F::value_type>::type>>>{x,scalar<F>{y}};
+                                                                                                                                       ^
+Makefile:27: recipe for target 'PHASE_AS0_3.tst' failed
+make: *** [PHASE_AS0_3.tst] Error 1
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_AS0_5 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS0_5.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_AS1_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_AS1_0.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_BS1_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS1_0.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_BS1_1 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS1_1.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_BS1_2 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS1_2.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_BS1_3 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS1_3.tst
+In file included from Valarray_secret_unittests.cpp:14:0:
+Valarray.h: In instantiation of ‘unaryproxy<T, OP>::unaryproxy(Ref<L>, int) [with T = epl::vector<int>; OP = AddVal<int>; Ref<L> = const epl::vector<int>&]’:
+Valarray.h:292:14:   required from ‘vec_wrap<unaryproxy<T, FUN> > vec_wrap<T>::apply(FUN) [with FUN = AddVal<int>; T = epl::vector<int>]’
+Valarray_secret_unittests.cpp:213:47:   required from here
+Valarray.h:268:53: error: no matching function for call to ‘AddVal<int>::AddVal(<brace-enclosed initializer list>)’
+     unaryproxy(Ref<T> m,int a):middle(m),opetor(OP{}){};//& or not & is a question
+                                                     ^
+Valarray.h:268:53: note: candidates are:
+Valarray_secret_unittests.cpp:201:5: note: AddVal<T>::AddVal(T) [with T = int]
+     AddVal(T val) : _val(val) {}
+     ^
+Valarray_secret_unittests.cpp:201:5: note:   candidate expects 1 argument, 0 provided
+Valarray_secret_unittests.cpp:196:8: note: constexpr AddVal<int>::AddVal(const AddVal<int>&)
+ struct AddVal {
+        ^
+Valarray_secret_unittests.cpp:196:8: note:   candidate expects 1 argument, 0 provided
+Valarray_secret_unittests.cpp:196:8: note: constexpr AddVal<int>::AddVal(AddVal<int>&&)
+Valarray_secret_unittests.cpp:196:8: note:   candidate expects 1 argument, 0 provided
+In file included from Valarray_secret_unittests.cpp:14:0:
+Valarray.h: In instantiation of ‘unaryproxy<T, OP>::unaryproxy(Ref<L>, int) [with T = epl::vector<int>; OP = MultVal<int>; Ref<L> = const epl::vector<int>&]’:
+Valarray.h:292:14:   required from ‘vec_wrap<unaryproxy<T, FUN> > vec_wrap<T>::apply(FUN) [with FUN = MultVal<int>; T = epl::vector<int>]’
+Valarray_secret_unittests.cpp:243:30:   required from here
+Valarray.h:268:53: error: no matching function for call to ‘MultVal<int>::MultVal(<brace-enclosed initializer list>)’
+     unaryproxy(Ref<T> m,int a):middle(m),opetor(OP{}){};//& or not & is a question
+                                                     ^
+Valarray.h:268:53: note: candidates are:
+Valarray_secret_unittests.cpp:231:5: note: MultVal<T>::MultVal(T) [with T = int]
+     MultVal(T val) : _val(val) {}
+     ^
+Valarray_secret_unittests.cpp:231:5: note:   candidate expects 1 argument, 0 provided
+Valarray_secret_unittests.cpp:226:8: note: constexpr MultVal<int>::MultVal(const MultVal<int>&)
+ struct MultVal {
+        ^
+Valarray_secret_unittests.cpp:226:8: note:   candidate expects 1 argument, 0 provided
+Valarray_secret_unittests.cpp:226:8: note: constexpr MultVal<int>::MultVal(MultVal<int>&&)
+Valarray_secret_unittests.cpp:226:8: note:   candidate expects 1 argument, 0 provided
+Makefile:27: recipe for target 'PHASE_BS1_2.tst' failed
+make: *** [PHASE_BS1_2.tst] Error 1
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_BS1_4 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS1_4.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_BS1_5 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS1_5.tst
+Makefile:27: recipe for target 'PHASE_BS1_3.tst' failed
+make: *** [PHASE_BS1_3.tst] Error 1
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_BS1_6 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS1_6.tst
+Valarray_secret_unittests.cpp: In member function ‘virtual void PhaseB1Secret.<censored>
+Valarray_secret_unittests.cpp:284:18: error: ‘valarray<int>’ has no member named ‘sum’
+     int sum = v1.sum();
+                  ^
+Valarray_secret_unittests.cpp:288:21: error: ‘class vec_wrap<proxy<epl::vector<int>, epl::vector<int>, std::plus<int> > >’ has no member named ‘sum’
+     sum = (v1 + v2).sum();
+                     ^
+Makefile:27: recipe for target 'PHASE_BS1_5.tst' failed
+make: *** [PHASE_BS1_5.tst] Error 1
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_BS1_7 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS1_7.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_BS1_8 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS1_8.tst
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_BS1_9 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS1_9.tst
+In file included from Valarray_secret_unittests.cpp:14:0:
+Valarray.h: In instantiation of ‘vec_wrap<proxy<T, scalar<F>, std::minus<typename choose_type<typename T::value_type, typename scalar<F>::value_type>::type> > > operator-(const vec_wrap<T>&, const F&) [with T = epl::vector<int>; F = int; unused = int; typename choose_type<typename T::value_type, typename scalar<F>::value_type>::type = int]’:
+Valarray_secret_unittests.cpp:359:9:   required from here
+Valarray.h:417:142: error: ‘int’ is not a class, struct, or union type
+     return vec_wrap<proxy<T,scalar<F>, std::minus<typename choose_type<typename T::value_type,typename F::value_type>::type>>>{x,scalar<F>{y}};
+                                                                                                                                              ^
+Valarray.h: In instantiation of ‘vec_wrap<proxy<T, scalar<F>, std::minus<typename choose_type<typename T::value_type, typename scalar<F>::value_type>::type> > > operator-(const vec_wrap<T>&, const F&) [with T = proxy<epl::vector<int>, scalar<int>, std::minus<int> >; F = int; unused = int; typename choose_type<typename T::value_type, typename scalar<F>::value_type>::type = int]’:
+Valarray_secret_unittests.cpp:363:15:   required from here
+Valarray.h:417:142: error: ‘int’ is not a class, struct, or union type
+In file included from Valarray_secret_unittests.cpp:14:0:
+Valarray.h: In instantiation of ‘vec_wrap<proxy<T, scalar<F>, std::minus<typename choose_type<typename T::value_type, typename scalar<F>::value_type>::type> > > operator-(const vec_wrap<T>&, const F&) [with T = epl::vector<int>; F = int; unused = int; typename choose_type<typename T::value_type, typename scalar<F>::value_type>::type = int]’:
+Valarray_secret_unittests.cpp:396:14:   required from here
+Valarray.h:417:142: error: ‘int’ is not a class, struct, or union type
+     return vec_wrap<proxy<T,scalar<F>, std::minus<typename choose_type<typename T::value_type,typename F::value_type>::type>>>{x,scalar<F>{y}};
+                                                                                                                                              ^
+Makefile:27: recipe for target 'PHASE_BS1_8.tst' failed
+make: *** [PHASE_BS1_8.tst] Error 1
+g++ Valarray_PhaseA_unittests.cpp Valarray_PhaseB_unittests.cpp Valarray_secret_unittests.cpp -DPHASE_BS2_0 ../../gtest/lib/gtest64.a -I ../../gtest/include -std=c++11 -fpermissive  -pthread -o PHASE_BS2_0.tst
+Makefile:27: recipe for target 'PHASE_BS1_9.tst' failed
+make: *** [PHASE_BS1_9.tst] Error 1
+
+Testing: PHASE_A0_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.Operators
+[       OK ] PhaseA.Operators (0 ms)
+[----------] 1 test from PhaseA (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A0_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA
+[ RUN      ] PhaseA.BracketOp
+[       OK ] PhaseA.BracketOp (0 ms)
+[----------] 1 test from PhaseA (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_A1_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseA1
+[ RUN      ] PhaseA1.Complex
+[       OK ] PhaseA1.Complex (0 ms)
+[----------] 1 test from PhaseA1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS0_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseASecret.<censored>
+[ RUN      ] PhaseASecret.<censored>
+[       OK ] PhaseASecret.<censored>
+[----------] 1 test from PhaseASecret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS0_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseASecret.<censored>
+[ RUN      ] PhaseASecret.<censored>
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+[       OK ] PhaseASecret.<censored>
+[----------] 1 test from PhaseASecret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (2 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS0_2.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseASecret.<censored>
+[ RUN      ] PhaseASecret.<censored>
+[       OK ] PhaseASecret.<censored>
+[----------] 1 test from PhaseASecret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS0_4.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseASecret.<censored>
+[ RUN      ] PhaseASecret.<censored>
+[       OK ] PhaseASecret.<censored>
+[----------] 1 test from PhaseASecret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS0_5.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseASecret.<censored>
+[ RUN      ] PhaseASecret.<censored>
+[       OK ] PhaseASecret.<censored>
+[----------] 1 test from PhaseASecret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_AS1_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseASecret.<censored>
+[ RUN      ] PhaseASecret.<censored>
+[       OK ] PhaseASecret.<censored>
+[----------] 1 test from PhaseASecret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_B1_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1
+[ RUN      ] PhaseB1.Sqrt
+[       OK ] PhaseB1.Sqrt (0 ms)
+[----------] 1 test from PhaseB1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_B1_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1
+[ RUN      ] PhaseB1.Apply
+[       OK ] PhaseB1.Apply (0 ms)
+[----------] 1 test from PhaseB1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_B1_2.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1
+[ RUN      ] PhaseB1.Accumulate
+[       OK ] PhaseB1.Accumulate (0 ms)
+[----------] 1 test from PhaseB1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_B1_3.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1
+[ RUN      ] PhaseB1.Lazy
+[       OK ] PhaseB1.Lazy (0 ms)
+[----------] 1 test from PhaseB1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS1_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1Secret.<censored>
+[ RUN      ] PhaseB1Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[----------] 1 test from PhaseB1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS1_1.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1Secret.<censored>
+[ RUN      ] PhaseB1Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[----------] 1 test from PhaseB1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS1_4.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1Secret.<censored>
+[ RUN      ] PhaseB1Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[----------] 1 test from PhaseB1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS1_6.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1Secret.<censored>
+[ RUN      ] PhaseB1Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[----------] 1 test from PhaseB1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (4 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS1_7.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB1Secret.<censored>
+[ RUN      ] PhaseB1Secret.<censored>
+[       OK ] PhaseB1Secret.<censored>
+[----------] 1 test from PhaseB1Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+
+Testing: PHASE_BS2_0.tst
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from PhaseB2Secret.<censored>
+[ RUN      ] PhaseB2Secret.<censored>
+[       OK ] PhaseB2Secret.<censored>
+[----------] 1 test from PhaseB2Secret.<censored>
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
